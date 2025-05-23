@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Timer & Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="mode-switch">
+            <button id="stopwatch-mode-btn">⏱ Stopwatch</button>
+            <button id="timer-mode-btn">⏰ Timer</button>
+        </div>
+
+        <div class="time-display" id="time-display">00:00:00</div>
+
+        <div class="timer-input hidden" id="timer-input-section">
+            <label for="min-input">Min:</label>
+            <input type="number" id="min-input" value="00" min="0" max="59">
+            <label for="sec-input">Sec:</label>
+            <input type="number" id="sec-input" value="00" min="0" max="59">
+        </div>
+
+        <div class="controls">
+            <button id="start-btn">▶ Start</button>
+            <button id="stop-btn">■ Stop</button>
+            <button id="reset-btn">⟲ Reset</button>
+        </div>
+    </div>
+
+    <audio id="alarm-sound" src="https://www.soundjay.com/buttons/beep-01a.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
